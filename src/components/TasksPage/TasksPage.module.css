@@ -1,0 +1,20 @@
+.mainTasksBox{
+    width: 100%;
+    height:94vh;
+    background-color: #ECF1F4;
+    display: flex;
+    justify-content: center;
+}
+
+.companyTaskBox{
+    position: relative;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.companyTaskBox input{
+    width:600px;
+}

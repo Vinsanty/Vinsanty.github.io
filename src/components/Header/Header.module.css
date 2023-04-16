@@ -1,0 +1,70 @@
+.header{
+    width:100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menuContainer{
+    color:#002033;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 10px;
+    height: 100%;
+    width: 400px;
+}
+
+
+
+.menuContainer a {
+    text-decoration: none;
+}
+
+.item{
+    color:#00203399 
+}
+
+.active{
+    color:#002033;
+    padding: 19.2px 0 19.2px 0;
+    border-bottom: #0078D2 2px solid;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 10px;
+    height: 100%;
+    width: 400px;
+}
+
+.loginContainer button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+.persInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.persInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.geolocInfo{
+    display: flex;
+    flex-direction: column;
+}

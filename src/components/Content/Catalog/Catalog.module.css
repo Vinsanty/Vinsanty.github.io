@@ -1,0 +1,45 @@
+.mainCatalog{
+    display: grid;
+    width: 1440px;
+    height: 1200px;
+}
+
+.catalogTitle h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.choiceGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width:488px;
+    color:#002033;
+    height: 40px;
+    border: 1px solid #00436948;
+    margin-top: 15px;
+}
+
+.choiceGroup button{
+    padding: 0 5px 0 5px;
+    border: none;
+    border-right: 1.5px solid  #00436948;
+    font-size: 16px;
+}
+
+.choiceGroup button:last-child{
+    border: none;
+}
+
+.cardCatalog{
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.choiceGroup button:hover{
+    text-shadow: 0px 0px 10px #004369;
+}

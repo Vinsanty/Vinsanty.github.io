@@ -1,0 +1,67 @@
+.mainWayBox{
+    width:1440px;
+    height:500px;
+    padding-bottom: 30px;
+    background-color: #00203307;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    row-gap: 50px;
+}
+
+
+.titleWay{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.titleWay div{
+    display: flex;
+    column-gap: 15px;
+}
+
+.titleWay div p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.titleWay div button{
+    background-color: #00395c23;
+    border:none;
+    font-size: 14px;
+}
+
+.titleHideBtn {
+    margin:15px 0 0 20px;
+}
+
+.titleHideBtn button{
+
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px;
+    color:#00395cc8;
+}
+
+.switchBtnBox{
+    margin:15px 20px 0 0;
+}
+
+.switchBtnBox button {
+    height:32px;
+    width: 32px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.cardBox{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+

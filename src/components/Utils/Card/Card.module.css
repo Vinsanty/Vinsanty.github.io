@@ -1,0 +1,86 @@
+.mainCardBox{
+    width: 464px;
+    height: 260px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluredInfo{
+    color: #002033a0;
+    height: fit-content;
+}
+
+.titleCardBox{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    top:30px;
+    left:30px
+}
+
+.titleCardBox h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #002033;
+}
+
+.cardInfoBox{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    row-gap: 40px;
+}
+
+.cardInfoBox p{
+    font-size: 14px;
+    color:#002033;
+}
+
+.continueBtn{
+    background-color: #0078D2;
+    color:#FFFFFF;
+}
+
+.cardInfoBox button{
+    width: 178px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #0078D2;
+    color:#0078D2;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cardInfoBox button svg{
+    margin-right: 15px;
+}
+
+.progressBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.doneBox{
+    background-color: #22C38E;
+    width: 24px;
+    height:24px;
+    border-radius: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+

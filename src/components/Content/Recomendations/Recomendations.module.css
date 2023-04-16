@@ -1,0 +1,80 @@
+.recomendBox{
+    width: 1440px;
+    height: 288px;
+}
+
+.title{
+    position: relative;
+    bottom: 20px; 
+}
+
+.title h3{
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+.testBox{
+    width:1440px;
+    height: 248px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.24);
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.startInfo{
+    display: grid;
+    grid-template-rows: 1fr 40px 1fr 1fr;
+    height: 90%;
+}
+
+.startInfo h2{
+    font-size: 24pt;
+    font-weight: 400;
+}
+
+.bluredInfo{
+    color: #002033a0;
+    margin-top: 5px;
+    height: fit-content;
+}
+
+.continueTheme{
+    height: 40px;
+    width: 171px;
+    background-color: #0078D2;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size:12pt;
+    position: relative;
+
+}
+
+.throughAgain{
+    width: 178px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #0078D2;
+    color:#0078D2;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.throughAgain  svg{
+    margin-right: 15px;
+}
+
+

@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import ContentContainer from './components/Content/ContentContainer';
+import { setCountryThunkCreator } from './store/navReducer';
+import { connect } from 'react-redux';
+import TasksPage from './components/TasksPage/TasksPage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  
+    componentDidMount(){
+      this.props.setCountry()
+    }
+
+    render(){
+      return (
+        <div className="App">
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route path = '/sciensy' element={<ContentContainer />}/>
+              <Route path='/tasks' element={<TasksPage />}/>
+            </Routes>
+          </BrowserRouter>
+        </div>
+      );
+    }
+  }
+
+
+
+let mapDispatchToProps = (dispatch)=>{
+  return{
+    setCountry(){
+      dispatch(setCountryThunkCreator())
+    }
+  }
 }
 
-export default App;
+export default connect(null,mapDispatchToProps)(App);
