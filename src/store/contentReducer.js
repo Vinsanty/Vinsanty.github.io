@@ -9,10 +9,10 @@ let initialState = {
         {id:3,title: "Введение в рабочую среду",category1:"Для новичка",category2:"Основы работы",allTasks:255,complTasks:0,isStarted:false,isDone:false}
     ],
     catalog:[
-        {id:4,title: "Начало работы",category1:"Для новичка",category2:"Основы работы",allTasks:10,complTasks:10,isStarted:true,isDone:false},
+        {id:4,title: "Начало работы",category1:"Для новичка",category2:"Основы работы",allTasks:10,complTasks:8,isStarted:true,isDone:false},
         {id:5,title: "Работа с библиотеками GPN",category1:"Профессионалу",category2:"Библиотеки",allTasks:255,complTasks:10,isStarted:false,isDone:false},
         {id:6,title: "Введение в рабочую среду",category1:"Профессионалу",category2:"Библиотеки",allTasks:10,complTasks:10,isStarted:false,isDone:false},
-        {id:7,title: "Начало работы",category1:"Для новичка",category2:"Основы работы",allTasks:10,complTasks:10,isStarted:true,isDone:false},
+        {id:7,title: "Начало работы",category1:"Для новичка",category2:"Основы работы",allTasks:10,complTasks:3,isStarted:true,isDone:false},
         {id:8,title: "Работа с библиотеками GPN",category1:"Профессионалу",category2:"Библиотеки",allTasks:255,complTasks:10,isStarted:false,isDone:false},
         {id:9,title: "Введение в рабочую среду",category1:"Профессионалу",category2:"Библиотеки",allTasks:10,complTasks:10,isStarted:false,isDone:false},
     ]
@@ -25,7 +25,7 @@ const contentReducer = (state=initialState,action)=>{
             return {...state,
                 cards: [...state.cards.map(c=>{
                     if (action.id === c.id){
-                        if(action.value === c.allTasks){
+                        if(action.value >= c.allTasks){
                             return {...c,isDone:true,isStarted:false}
                         }
                         else{
@@ -38,7 +38,7 @@ const contentReducer = (state=initialState,action)=>{
                 })],
                 catalog:[...state.catalog.map(c=>{
                     if (action.id === c.id){
-                        if(action.value === c.allTasks){
+                        if(action.value >= c.allTasks){
                             return {...c,isDone:true,isStarted:false}
                         }
                         else{
@@ -79,10 +79,12 @@ const contentReducer = (state=initialState,action)=>{
 
 
 export const increaceAC = (id,value) =>{
+
     return {type : INCREACE_COMPLTASKS,id,value}
 }
 
 export const retryAC = (id) =>{
+
     return {type:RETRY_START,id}
 }
 

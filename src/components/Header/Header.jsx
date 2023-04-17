@@ -3,20 +3,19 @@ import style from './Header.module.css'
 import bell from '../../common/bell.svg'
 import question from '../../common/question.svg'
 import sun from '../../common/sun-svgrepo-com.svg'
-import { connect } from 'react-redux'
 
-const Header = (props) =>{
+const Header = ({city,lat,lon}) =>{
     return(
         <header className={style.header}>
             <div className={style.menuContainer}>
                 <h4>Портал Разработчика</h4>
-                <NavLink to='/sciensy' className={navData => navData.isActive ? style.active: style.item}>Моё обучение</NavLink>
+                <NavLink to='/training' className={navData => navData.isActive ? style.active: style.item}>Моё обучение</NavLink>
                 <NavLink to='/tasks' className={navData => navData.isActive ? style.active: style.item}>Задачи</NavLink>
             </div>
             <div className={style.geolocInfo}>
-                <span>г.{props.nav.country}</span>
-                <span>Широта: {props.nav.lat}</span>
-                <span>Долгота: {props.nav.lon}</span>
+                <span>г.{city}</span>
+                <span>Широта: {lat}</span>
+                <span>Долгота: {lon}</span>
             </div>
             <div className={style.loginContainer}>
                 <button><img src={bell} alt='bell-btn'/></button>
@@ -31,12 +30,8 @@ const Header = (props) =>{
     )
 }
 
-let mapStateToProps = (state)=>{
-    return{
-        nav: state.nav
-    }
-}
 
 
 
-export default connect (mapStateToProps,null) (Header)
+
+export default  Header

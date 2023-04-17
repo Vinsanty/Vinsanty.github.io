@@ -5,7 +5,7 @@ const SET_COUNTRY = 'SET_COUNTRY'
 
 
 let initialState = {
-    country:null,
+    city:null,
     lat:null,
     lon:null
 }
@@ -13,7 +13,7 @@ let initialState = {
 const navReducer =(state=initialState,action)=>{
     switch(action.type){
         case SET_COUNTRY:{
-           return {...state,country:action.city,
+           return {...state,city:action.city,
             lat:action.lat,
             lon:action.lon}
         }
@@ -28,7 +28,8 @@ const setDataAC = (city,lat,lon)=>{
     return{type:SET_COUNTRY,city,lat,lon}
 }
 
-export const setCountryThunkCreator = () => dispath =>{
+export const setNavDataThunkCreator = () => dispath =>{
+    console.log('AJAX')
     navigator.geolocation.getCurrentPosition(pos=>{
         let url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address";
         let token = "379d205731fa735d99149f7ddfde5e71d37e1ac0";
