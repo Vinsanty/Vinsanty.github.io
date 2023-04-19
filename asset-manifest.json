@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.74f1ef54.css",
-    "main.js": "/static/js/main.b902fa0a.js",
-    "static/js/787.7803c6f4.chunk.js": "/static/js/787.7803c6f4.chunk.js",
-    "static/media/sun-svgrepo-com.svg": "/static/media/sun-svgrepo-com.83c61b7fc71259baf05b573bf35a37dc.svg",
-    "static/media/question.svg": "/static/media/question.cc590832a21fa688ff2086f2f65e2499.svg",
-    "static/media/bell.svg": "/static/media/bell.ab4cb8886a27794485768a008ab627f1.svg",
-    "index.html": "/index.html",
-    "main.74f1ef54.css.map": "/static/css/main.74f1ef54.css.map",
-    "main.b902fa0a.js.map": "/static/js/main.b902fa0a.js.map",
-    "787.7803c6f4.chunk.js.map": "/static/js/787.7803c6f4.chunk.js.map"
+    "main.css": "/hackaton/static/css/main.857568bb.css",
+    "main.js": "/hackaton/static/js/main.cf2a58d9.js",
+    "static/js/787.7803c6f4.chunk.js": "/hackaton/static/js/787.7803c6f4.chunk.js",
+    "static/media/sun-svgrepo-com.svg": "/hackaton/static/media/sun-svgrepo-com.83c61b7fc71259baf05b573bf35a37dc.svg",
+    "static/media/question.svg": "/hackaton/static/media/question.cc590832a21fa688ff2086f2f65e2499.svg",
+    "static/media/preloader.svg": "/hackaton/static/media/preloader.68e0625a87a00d0f9e7d922e34c5031f.svg",
+    "static/media/bell.svg": "/hackaton/static/media/bell.ab4cb8886a27794485768a008ab627f1.svg",
+    "index.html": "/hackaton/index.html",
+    "main.857568bb.css.map": "/hackaton/static/css/main.857568bb.css.map",
+    "main.cf2a58d9.js.map": "/hackaton/static/js/main.cf2a58d9.js.map",
+    "787.7803c6f4.chunk.js.map": "/hackaton/static/js/787.7803c6f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74f1ef54.css",
-    "static/js/main.b902fa0a.js"
+    "static/css/main.857568bb.css",
+    "static/js/main.cf2a58d9.js"
   ]
 }
