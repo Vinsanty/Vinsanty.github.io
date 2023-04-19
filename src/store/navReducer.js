@@ -28,8 +28,7 @@ const setDataAC = (city,lat,lon)=>{
     return{type:SET_COUNTRY,city,lat,lon}
 }
 
-export const setNavDataThunkCreator = () => dispath =>{
-    console.log('AJAX')
+export const setNavDataThunkCreator = () => async dispath =>{
     navigator.geolocation.getCurrentPosition(pos=>{
         let url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address";
         let token = "379d205731fa735d99149f7ddfde5e71d37e1ac0";

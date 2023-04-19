@@ -17,3 +17,19 @@
 .companyDataBox p{
     font-size: 18px;
 }
+
+@media (max-width:400px){
+    .companyDataBox{
+        width: 350px;
+        height: 250px;
+    }
+
+    .companyDataBox h3{
+        font-size: 16px;
+    }
+
+    .companyDataBox p {
+        font-size: 8px;
+        text-align: justify;
+    }
+}

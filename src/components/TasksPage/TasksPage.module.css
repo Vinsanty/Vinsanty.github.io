@@ -18,3 +18,22 @@
 .companyTaskBox input{
     width:600px;
 }
+
+@media (max-width:400px){
+    .mainTasksBox{
+        width: 100vw;
+        height: 100vh;
+    }
+    .companyTaskBox input{
+        width: 300px;
+    }
+
+    .companyTaskBox div{
+        text-align: center;
+    }
+
+    .companyTaskBox div p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
