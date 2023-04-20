@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.857568bb.css",
-    "main.js": "/static/js/main.da944151.js",
+    "main.js": "/static/js/main.2a9651bb.js",
     "static/js/787.7803c6f4.chunk.js": "/static/js/787.7803c6f4.chunk.js",
     "static/media/sun-svgrepo-com.svg": "/static/media/sun-svgrepo-com.83c61b7fc71259baf05b573bf35a37dc.svg",
     "static/media/question.svg": "/static/media/question.cc590832a21fa688ff2086f2f65e2499.svg",
-    "static/media/preloader.svg": "/static/media/preloader.68e0625a87a00d0f9e7d922e34c5031f.svg",
     "static/media/bell.svg": "/static/media/bell.ab4cb8886a27794485768a008ab627f1.svg",
     "index.html": "/index.html",
     "main.857568bb.css.map": "/static/css/main.857568bb.css.map",
-    "main.da944151.js.map": "/static/js/main.da944151.js.map",
+    "main.2a9651bb.js.map": "/static/js/main.2a9651bb.js.map",
     "787.7803c6f4.chunk.js.map": "/static/js/787.7803c6f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.857568bb.css",
-    "static/js/main.da944151.js"
+    "static/js/main.2a9651bb.js"
   ]
 }
